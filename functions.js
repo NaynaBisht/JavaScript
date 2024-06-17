@@ -18,3 +18,20 @@ function add(a,b){
 }
 add(2,3)
 add(20,30)
+
+
+function letterFinder(word, match){
+    for(i = 0; i<word.length; i++){
+        if(word[i] == match){
+            console.log("Found the letter at", i)
+        }
+        else{
+            console.log("Letter not found", i)
+        }
+    }
+}
+letterFinder("wotot","t")
+
+
+
+
