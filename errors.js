@@ -14,3 +14,6 @@ console.log(c)
 
 // type error
 (5).pop
+
+// range error
+(10).toString(2)
