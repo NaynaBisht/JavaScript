@@ -28,3 +28,27 @@ try{
     console.log("there was an error")
 }
 console.log("program does not stop")
+
+console.log()
+console.log()
+console.log()
+
+function addTwoNums(a,b){
+    try{
+        if(typeof(a)!= Number){
+            throw new ReferenceError("a is not a number")
+        }else if(typeof(b)!=Number){
+            throw new ReferenceError("b is not a number")
+        }else{
+            console.log(a+b)
+        }
+    }catch(err){
+        console.log("ERROR !",err)
+    }
+}
+addTwoNums("2",3)
+console.log("it still works")
+
+
+
+
