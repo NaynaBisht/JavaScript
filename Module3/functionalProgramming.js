@@ -27,8 +27,28 @@ function objectMaker(val){
 }
 console.log(objectMaker(20))
 console.log(objectMaker(doubleIt(100)))
+console.log()
 
+function getTotal(a,b){
+    return a+b
+}
+console.log(getTotal(10,20))
 
+function getDistance(mph, h) {
+    return mph * h
+}
+var mph = 60;
+var h = 2;
+var distance = getDistance(mph, h);
+console.log(distance);
 
-
-
+// oop
+var virtualPet = {
+    sleepy: true,
+    nap:function(){
+        this.sleepy = false
+    }
+}
+console.log(virtualPet.sleepy)
+virtualPet.nap()
+console.log(virtualPet.sleepy)
